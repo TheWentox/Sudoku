@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sudoku</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Sudoku game</h1>
+    </div>
+    <div class="ui">
+        <div id="start">
+            <label id="nameLabel" for="name">Your Name</label>
+            <input id="name" type="text" required="required" maxlength="20">
+            <button onclick="start()">Start</button>
+            <label id="scoreboardLabel" for="score">Scoreboard</label>
+            <table id="score" class="scoreboard">
+                <thead>
+                    <th>Name</th>
+                    <th>Score</th>
+                </thead>
+                <tbody id="scores">
+                </tbody>
+            </table>
+        </div>
+        <div id="main">
+            <div class="counter">
+                <label id="minutes">00</label>:<label id="seconds">00</label>
+            </div>
+            <table class="sudoku" cellpadding="20">
+                <tbody id="grid">
+
+                </tbody>
+            </table>
+
+            <div class="numbers">
+                <p id="1">1</p>
+                <p id="2">2</p>
+                <p id="3">3</p>
+                <p id="4">4</p>
+                <p id="5">5</p>
+                <p id="6">6</p>
+                <p id="7">7</p>
+                <p id="8">8</p>
+                <p id="9">9</p>
+            </div>
+            <!-- <canvas id="canvas" height="600" width="600" style="border: 1px solid"></canvas> -->
+        </div>
+    </div>
+    <div class="footer">
+        <p class="creator">
+            Oláh Alex ~ HSQ0RH ~ SZTE 2020
+        </p>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
